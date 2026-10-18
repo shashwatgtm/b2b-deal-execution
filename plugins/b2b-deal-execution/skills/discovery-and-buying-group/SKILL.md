@@ -112,7 +112,7 @@ Questions: the read back; "Opening"; one block per framework part (part, what it
 
 ### Example 1: happy path, MEDDPICC questions for a second call (seller in SaaS, buyer in logistics tech)
 
-Klenty is used only as an example of the seller's own company; the buyer, its people, the deal and every figure are hypothetical, and no real Klenty employee or customer is described. Facts about Klenty are quoted from its home page, https://www.klenty.com/ (title "Sales Engagement Platform & AI Dialer for SDRs"; meta description "Sales engagement platform for phone-first SDR teams"), fetched 14 October 2026.
+Klenty is used only as an example of the seller's own company; the buyer, its people, the deal and every figure are hypothetical, and no real Klenty employee or customer is described. Facts about Klenty are quoted from its home page (title "Sales Engagement Platform & AI Dialer for SDRs"; meta description "Sales engagement platform for phone-first SDR teams"), fetched 14 October 2026.
 
 User input (hypothetical): "I'm an AE at Klenty. Second call Thursday with the head of sales of a logistics software company that sells to fleet operators. They run a phone first SDR team. Pains from call 1: reps spend the morning on manual dialling, and they cannot see which calls turn into meetings. We use MEDDPICC. Known: the head of sales is keen; the CFO approves tools."
 

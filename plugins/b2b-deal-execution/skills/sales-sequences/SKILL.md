@@ -109,9 +109,9 @@ Read back; the days block (script output); each email (number, day and date, sub
 
 ### Example 1: happy path, a cold outreach sequence (seller in SaaS, readers in logistics tech)
 
-Klenty is used only as an example of the seller's own company; the readers, the pains as stated and every figure are hypothetical, and no real Klenty employee or customer is described. Facts about Klenty are quoted from its home page, https://www.klenty.com/ (title "Sales Engagement Platform & AI Dialer for SDRs"; it lists CRM integrations "Zoho", "Pipedrive", "Hubspot", "Salesforce" and "MS Dynamics"), fetched 14 October 2026.
+Klenty is used only as an example of the seller's own company; the readers, the pains as stated and every figure are hypothetical, and no real Klenty employee or customer is described. Facts about Klenty are quoted from its home page (title "Sales Engagement Platform & AI Dialer for SDRs"; it lists CRM integrations "Zoho", "Pipedrive", "Hubspot", "Salesforce" and "MS Dynamics"), fetched 14 October 2026.
 
-User input (hypothetical): "I'm an SDR at Klenty. Four email cold sequence to heads of sales at logistics software companies that sell to fleet operators with phone first SDR teams. Pains: mornings lost to manual dialling; no view of which calls become meetings. No case study I can name yet; use what klenty.com says for any claim. Start Monday 19 October. Ask: 20 minutes."
+User input (hypothetical): "I'm an SDR at Klenty. Four email cold sequence to heads of sales at logistics software companies that sell to fleet operators with phone first SDR teams. Pains: mornings lost to manual dialling; no view of which calls become meetings. No case study I can name yet; use what Klenty's site says for any claim. Start Monday 19 October. Ask: 20 minutes."
 
 Output (abridged):
 
@@ -137,7 +137,7 @@ Emails 3 (the right person) and 4 (close the loop) follow the arc in references/
 
 Check (scripts/sequence_days.py check, emails 1 and 2 of this abridged example): `email 1: subject 4 words, 27 characters; body 55 words`, `email 2: subject 4 words, 27 characters; body 47 words`, `CHECK: 2 emails, 0 problems`. In the full draft the check must show 4 emails for the 4 send days.
 
-Before you send: add each first name from your CRM. Claims checklist: (1) email 1, manual dialling: klenty.com says "Say goodbye to manual dialing, note-taking and CRM data entry" (fetched 14 October 2026); (2) email 2, the CRM integration list: klenty.com lists "Zoho", "Pipedrive", "Hubspot", "Salesforce" and "MS Dynamics" (same page). No result or statistic is claimed, because you have no case study to name yet.
+Before you send: add each first name from your CRM. Claims checklist: (1) email 1, manual dialling: Klenty's site says "Say goodbye to manual dialing, note-taking and CRM data entry" (fetched 14 October 2026); (2) email 2, the CRM integration list: Klenty's site lists "Zoho", "Pipedrive", "Hubspot", "Salesforce" and "MS Dynamics" (same page). No result or statistic is claimed, because you have no case study to name yet.
 
 ### Example 2: partial data, re engaging a deal with no days given (any vertical)
 

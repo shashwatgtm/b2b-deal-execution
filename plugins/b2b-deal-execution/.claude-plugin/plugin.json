@@ -1,7 +1,7 @@
 {
   "name": "b2b-deal-execution",
   "displayName": "B2B Deal Execution",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Win the B2B deal in front of you: review deal health from your own deal facts with every point shown as an example default you can change, build a mutual close plan with the buyer on a working day calendar and a 30, 60 and 90 day account plan, write discovery questions in your framework (MEDDPICC, BANT, SPICED, Challenger, Gap Selling) and map the buying group, hold the price in a negotiation and give your champion an internal selling asset in their own voice, and write deal stage email sequences.",
   "author": {
     "name": "Shashwat Ghosh",
@@ -10,9 +10,6 @@
   "homepage": "https://github.com/shashwatgtm/b2b-deal-execution",
   "repository": "https://github.com/shashwatgtm/b2b-deal-execution",
   "license": "MIT",
-  "documentationUrl": "https://github.com/shashwatgtm/b2b-deal-execution#readme",
-  "supportUrl": "https://github.com/shashwatgtm/b2b-deal-execution/issues",
-  "privacyPolicyUrl": "https://tools.gtmhelix.com/privacy/",
   "keywords": [
     "sales",
     "b2b-sales",

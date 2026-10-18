@@ -114,7 +114,7 @@ Negotiation: read back; "The numbers" (script output, labelled your figures); "W
 
 ### Example 1: happy path, a discount request (seller in SaaS, buyer in ITeS)
 
-Klenty is used only as an example of the seller's own company; the buyer, the people, the deal and every figure are hypothetical, and no real Klenty employee or customer is described. Facts about Klenty are quoted from its pricing page, https://www.klenty.com/pricing/ (final address https://www.klenty.com/sales-engagement-platform/pricing/; title "Sales Engagement Platform Pricing & Plans"; it shows plans "per user/month billed annually"), fetched 14 October 2026.
+Klenty is used only as an example of the seller's own company; the buyer, the people, the deal and every figure are hypothetical, and no real Klenty employee or customer is described. Facts about Klenty are quoted from its pricing page title "Sales Engagement Platform Pricing & Plans"; it shows plans "per user/month billed annually"), fetched 14 October 2026.
 
 User input (hypothetical): "I'm an AE at Klenty. An IT services firm wants 20% off a 36 lakh annual deal for 60 SDR seats to sign this month. I could live with a discount if they sign for two years; I value that at 3 lakh. They would also give a case study."
 

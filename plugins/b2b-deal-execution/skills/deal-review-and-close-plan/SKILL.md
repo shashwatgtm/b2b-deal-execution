@@ -133,7 +133,7 @@ Standard shape: a one line read back; the score block (score, status, factors wi
 
 ### Example 1: happy path, deal review and close plan (seller in SaaS, buyer in fintech)
 
-Klenty is used only as an example of the seller's own company; the buyer, the people, the deal and every figure are hypothetical, and no real Klenty employee or customer is described. Facts about Klenty are quoted from its home page, https://www.klenty.com/ (title "Sales Engagement Platform & AI Dialer for SDRs"; it lists CRM integrations "Zoho", "Pipedrive", "Hubspot", "Salesforce" and "MS Dynamics"), fetched 14 October 2026.
+Klenty is used only as an example of the seller's own company; the buyer, the people, the deal and every figure are hypothetical, and no real Klenty employee or customer is described. Facts about Klenty are quoted from its home page (title "Sales Engagement Platform & AI Dialer for SDRs"; it lists CRM integrations "Zoho", "Pipedrive", "Hubspot", "Salesforce" and "MS Dynamics"), fetched 14 October 2026.
 
 User input (hypothetical): "I'm an AE at Klenty. Deal with a fintech lender's SDR team: proposal stage 26 days, the head of sales is my champion, the CFO is named but has not been engaged yet, they use another dialer today, IT wants a CRM integration check. Target signature 27 November. Their steps: business case to the CFO, vendor registration, security questionnaire. Review it and give me the close plan."
 
