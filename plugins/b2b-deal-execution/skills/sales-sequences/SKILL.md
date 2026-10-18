@@ -85,7 +85,7 @@ Tie breakers:
 
 **Step 3. Draft the emails.**
 - Input: references/sequence-arcs.md, the user's facts, references/verticals.md.
-- Action: one email per day, each built from `python3 scripts/claim_ledger.py skeleton --type buyer-email`, and any note the reader forwards inside (a post demo email 3, a summary for an approver) from `skeleton --type forward-note`: fill every slot the seller's message, a cited page or a script answers, and leave "[User to add: ...]" only where nothing does; each claim once with its source; one pain per email. Each email goes to the contact the seller named for it; when the seller did not say who receives an email (a summary for an approver, for example), address it to the contact the seller named and ask in "Before you send" who should receive it, never choosing by a guess about who owns the budget. Each email has its own single ask; the same ask is not repeated in two emails.
+- Action: one email per day, each email, and any note the reader forwards inside (a post demo email 3, a summary for an approver): fill every slot the seller's message, a cited page or a script answers, and leave "[User to add: ...]" only where nothing does; each claim once with its source; one pain per email. Each email goes to the contact the seller named for it; when the seller did not say who receives an email (a summary for an approver, for example), address it to the contact the seller named and ask in "Before you send" who should receive it, never choosing by a guess about who owns the budget. Each email has its own single ask; the same ask is not repeated in two emails.
 - Output: the emails.
 - Failure mode: a made up detail about the recipient, a statistic, the same sentence in two emails.
 
@@ -95,11 +95,11 @@ Tie breakers:
 - Output: the counts line, the email count equal to the days, and 0 problems.
 - Failure mode: dashes, or a claim with no source left in.
 
-**Step 5. Deliver through the claim ledger.**
+**Step 5. Deliver.**
 - Input: the draft, word for word as you will send it.
-- Action: deliver the sequence, then "Before you send": the recipient details to add from the CRM, the claims checklist with sources, pains not used, the days and dates, and every open question from Step 1 (the product facts left as placeholders); then references/claim-ledger.md on the exact text you will send: run `python3 scripts/claim_ledger.py scan`, give each NEEDS SOURCE line the seller's exact words or a script line, or rewrite it as a slot, a question or a hedge, and run `check` until LEDGER PASS; then run `check --final` with the same files as your very last tool call (references/claim-ledger.md step 5).
-- Output: your whole reply is exactly the text that last call printed between its BEGIN CHECKED REPLY and END CHECKED REPLY lines: nothing before it, nothing after it, no word changed.
-- Failure mode: hiding a placeholder the user must fill; a quote stretched to fit; a sentence reworded after the check.
+- Action: deliver the sequence, then "Before you send": the recipient details to add from the CRM, the claims checklist with sources, pains not used, the days and dates, and every open question from Step 1 (the product facts left as placeholders).
+- Output: the checked draft.
+- Failure mode: hiding a placeholder the user must fill.
 
 ## 5. Output Format
 
@@ -199,7 +199,7 @@ Output: Nurture and event follow up series are written by b2b-events-pr-and-laun
 10. Domain rule: no false urgency, fake "Re:" or "Fwd:" subject, or guilt in the last email.
 11. Never a gender for a person known only by a role.
 12. Never state how the seller's product handles, stores or hosts data, or what it is certified for, unless the seller said it or a cited page shows it: write "[User to add: ...]".
-13. Restate every user fact with its exact meaning (a start date is the first send when the user says so; a pain the user suspects is not a pain the reader confirmed); never promise a product step, process or result the seller did not describe. Every buyer side line passes the claim ledger (Step 5).
+13. Restate every user fact with its exact meaning (a start date is the first send when the user says so; a pain the user suspects is not a pain the reader confirmed); never promise a product step, process or result the seller did not describe.
 
 ## 8. Trigger Phrases
 
@@ -219,5 +219,4 @@ Every command below is written with `python3`; on Windows, or wherever `python3`
 - scripts/sequence_days.py: send days by type (example defaults or yours), dates with weekend moves, and the check of a draft (counts, dashes). Run: `python3 scripts/sequence_days.py days --type <type> [...]` or `python3 scripts/sequence_days.py check --file draft.txt`.
 - references/sequence-arcs.md: the rules and what each email does per type.
 - references/verticals.md: reader sector notes for the nine verticals, no statistic.
-- scripts/claim_ledger.py and references/claim-ledger.md: the asset skeletons and the claim ledger on the exact delivered text.
 - references/voice-and-fact-check.md: the short voice check and fact check.

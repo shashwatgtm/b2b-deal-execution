@@ -10,7 +10,7 @@
       "name": "b2b-deal-execution",
       "source": "./plugins/b2b-deal-execution",
       "description": "Win the B2B deal in front of you: score deal health from your own facts, plan the close with the buyer on a working day calendar, ask the right discovery questions, map the buying group, hold the price and arm your champion, and write deal stage email sequences.",
-      "version": "1.0.0"
+      "version": "1.0.1"
     }
   ]
 }

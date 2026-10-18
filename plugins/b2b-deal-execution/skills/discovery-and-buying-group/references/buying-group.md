@@ -34,7 +34,7 @@ Each item is met, not met or not shown by the user's facts; the user's own hedge
 - No seat relies on a single message from the champion.
 
 ## The map
-A table: person (role as the user gave it), seat, why that seat, their concern, what they need to see, the next move with a date if the user has one, and status (only as the user gave it, otherwise not known; the seat-map skeleton of scripts/claim_ledger.py). Then "Missing seats" and "Questions to place the uncertain ones". An influence line (who approves, who influences, who reviews) may follow in plain sentences; no diagram is required.
+A table: person (role as the user gave it), seat, why that seat, their concern, what they need to see, the next move with a date if the user has one, and status (only as the user gave it, otherwise not known). Then "Missing seats" and "Questions to place the uncertain ones". An influence line (who approves, who influences, who reviews) may follow in plain sentences; no diagram is required.
 
 ## Privacy
 Seats and professional concerns only. No personality profile, no private details, no gender for a person known only by a role. Research on real named people is for b2b-research-market-and-account / account-research.

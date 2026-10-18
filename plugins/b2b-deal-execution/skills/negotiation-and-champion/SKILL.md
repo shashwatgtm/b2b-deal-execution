@@ -96,15 +96,15 @@ Tie breakers:
 
 **Step 5. The champion asset (when asked).**
 - Input: the seller's facts, the reader, the asset type.
-- Action: run `python3 scripts/claim_ledger.py skeleton --type champion-email` (or another type it lists) and build the asset from that skeleton only, in the champion's voice (references/champion-assets.md): fill every slot the seller's message answers and leave "[User to add: ...]" only where it gives nothing (references/claim-ledger.md), with the number of points the seller asked for; one decision requested; a vendor claim with no source stays out of the asset. Use the buyer's sector entry in references/verticals.md for what the reader watches, without any statistic.
+- Action: build the asset in the champion's voice (references/champion-assets.md): fill every slot the seller's message answers and leave "[User to add: ...]" only where it gives nothing, with the number of points the seller asked for; one decision requested; a vendor claim with no source stays out of the asset. Use the buyer's sector entry in references/verticals.md for what the reader watches, without any statistic.
 - Output: the asset, ready for the champion to edit.
-- Failure mode: the seller's voice; a line outside the skeleton.
+- Failure mode: the seller's voice; a line the seller did not give.
 
-**Step 6. Check, then the claim ledger.**
+**Step 6. Check.**
 - Input: the draft, word for word as you will send it.
-- Action: the voice check and fact check (references/voice-and-fact-check.md); then references/claim-ledger.md on the exact text you will send: run `python3 scripts/claim_ledger.py scan`, give each NEEDS SOURCE line the seller's exact words or a script line, or rewrite it as a slot, a question or a hedge, and run `check` until LEDGER PASS; then run `check --final` with the same files as your very last tool call (references/claim-ledger.md step 5).
-- Output: your whole reply is exactly the text that last call printed between its BEGIN CHECKED REPLY and END CHECKED REPLY lines: nothing before it, nothing after it, no word changed.
-- Failure mode: an unlabelled figure, a dash, an unnamed hand off; a quote stretched to fit; a sentence reworded after the check.
+- Action: the voice check and fact check (references/voice-and-fact-check.md).
+- Output: the checked draft.
+- Failure mode: an unlabelled figure, a dash, an unnamed hand off.
 
 ## 5. Output Format
 
@@ -223,7 +223,7 @@ The renewal discount: renewals belong to b2b-customer-success / renewal-save-pla
 11. Never a reason, motive or gender the user did not give.
 12. Domain rule: asked for a typical discount, a usual concession, a win rate or a market figure, say there is none without a cited source, and offer to work from the user's own deal history.
 13. Domain rule: never assume an approval limit; a line that depends on one is written as conditional on the seller's own limit.
-14. Restate every user fact with its exact meaning: a reply deadline is not a signing date ("procurement wants an answer by Friday" means a reply by Friday), an ask is not an agreement, an offer the seller is considering is not an offer already made; a trade line names a date as "[User to add: the date you set]" unless the seller gave one. A figure worked out from the buyer's words is the script's working, never the buyer's price. Every buyer side line passes the claim ledger (Step 6).
+14. Restate every user fact with its exact meaning: a reply deadline is not a signing date ("procurement wants an answer by Friday" means a reply by Friday), an ask is not an agreement, an offer the seller is considering is not an offer already made; a trade line names a date as "[User to add: the date you set]" unless the seller gave one. A figure worked out from the buyer's words is the script's working, never the buyer's price.
 15. Domain rule: a claim about how the seller's product handles, stores, hosts or protects data (where data sits, who holds it, the deployment model, a certification) is written "[User to add: how the product handles this data]" unless the seller gave it or a cited page shows it; this holds in the champion's asset, the words to say and the note to the champion.
 
 ## 8. Trigger Phrases
@@ -245,5 +245,4 @@ Every command below is written with `python3`; on Windows, or wherever `python3`
 - references/negotiation-playbooks.md: the rules, the words, and the playbook per scenario.
 - references/champion-assets.md: the champion's voice, the asset shapes, the reader.
 - references/verticals.md: buyer sector notes and trades by business model, no statistic.
-- scripts/claim_ledger.py and references/claim-ledger.md: the asset skeletons and the claim ledger on the exact delivered text.
 - references/voice-and-fact-check.md: the short voice check and fact check.

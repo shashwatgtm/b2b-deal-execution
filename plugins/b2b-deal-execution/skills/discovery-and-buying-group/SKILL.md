@@ -48,7 +48,6 @@ When two roles match (a sales leader asking for SDR first call questions), the s
 - Manual (the usual case): work from the user's words only.
 - Web available: not needed. Do not research the buyer or its people here; that is b2b-research-market-and-account / account-research. Open a page only when the user asks to check something they gave, and cite it.
 - CRM or notes connector: use the notes as the user's facts; say which call they came from.
-- Code execution: scripts/claim_ledger.py; with none, its checks by reading.
 
 **Urgency:**
 - Normal: the full set for the framework and stage.
@@ -95,15 +94,15 @@ Tie breakers:
 
 **Step 4. Map the buying group (when asked, or when people are named).**
 - Input: the people the user named and what they said about each.
-- Action: place each person in a seat with the reason (references/buying-group.md); show two seats and the settling question when a title is ambiguous; apply the champion test and label champion, potential champion or contact ("test: not shown" when the user gave only a label); list the missing seats with the question that finds each, asked of the champion or, when there is none, of the best placed contact the user named (say no champion has passed the test); a missing seat may name the usual role from the sector note, written "usually", never as a person; check the multi threading checklist (counts are example defaults). Build the map from `python3 scripts/claim_ledger.py skeleton --type seat-map`: what you know of each seat is the seller's own words, quoted; a status the seller did not give is "not known"; a seat's usual concern is labelled as usual for the seat, never as this person's. Deal behaviour the user described ("blocks every step") is quoted; personality traits, private details and a pronoun the user supplied are not repeated.
+- Action: place each person in a seat with the reason (references/buying-group.md); show two seats and the settling question when a title is ambiguous; apply the champion test and label champion, potential champion or contact ("test: not shown" when the user gave only a label); list the missing seats with the question that finds each, asked of the champion or, when there is none, of the best placed contact the user named (say no champion has passed the test); a missing seat may name the usual role from the sector note, written "usually", never as a person; check the multi threading checklist (counts are example defaults). Build the map: what you know of each seat is the seller's own words, quoted; a status the seller did not give is "not known"; a seat's usual concern is labelled as usual for the seat, never as this person's. Deal behaviour the user described ("blocks every step") is quoted; personality traits, private details and a pronoun the user supplied are not repeated.
 - Output: the map table, missing seats, questions to settle placements.
 - Failure mode: adding a person, a name or a personality note the user did not give; firming a hedge the user used ("is said to sign" written as "has to sign").
 
-**Step 5. Check, then the claim ledger.**
+**Step 5. Check.**
 - Input: the draft, word for word as you will send it.
-- Action: the voice check and fact check (references/voice-and-fact-check.md): every pain and person is the user's; no statistic; no dash; hand offs named with plugin and skill; then references/claim-ledger.md on the exact text you will send: run `python3 scripts/claim_ledger.py scan`, give each NEEDS SOURCE line the seller's exact words or a script line, or rewrite it as a slot, a question or a hedge, and run `check` until LEDGER PASS; then run `check --final` with the same files as your very last tool call (references/claim-ledger.md step 5).
-- Output: your whole reply is exactly the text that last call printed between its BEGIN CHECKED REPLY and END CHECKED REPLY lines: nothing before it, nothing after it, no word changed.
-- Failure mode: an invented fact or an unnamed hand off; a quote stretched to fit; a sentence reworded after the check.
+- Action: the voice check and fact check (references/voice-and-fact-check.md): every pain and person is the user's; no statistic; no dash; hand offs named with plugin and skill;
+- Output: the checked draft.
+- Failure mode: an invented fact or an unnamed hand off.
 
 ## 5. Output Format
 
@@ -220,7 +219,7 @@ The champion test for the procurement head, three questions: "Will they explain 
 2. Never assume the framework, the stage or the buyer's sector: read them or ask once.
 3. Never claim to know who holds a seat the user did not name: list it as missing with the question that finds it.
 4. If unsure which seat a title holds, show both and the settling question rather than guess.
-5. Never fabricate statistics, benchmarks, quotes, names or money amounts, including inside a question. A figure the seller typed with no source is the seller's own information when said to the buyer ("I understand X; is that right?"). Every buyer side line passes the claim ledger (Step 5).
+5. Never fabricate statistics, benchmarks, quotes, names or money amounts, including inside a question. A figure the seller typed with no source is the seller's own information when said to the buyer ("I understand X; is that right?").
 6. Use "[User to add: ...]" or "not given" where a fact is missing.
 7. Report real errors; never give fallback, mock, dummy or simulated data.
 8. Domain rule: people are roles; no personality profile, private detail, reason, motive or gender for a person that the user did not give.
@@ -245,4 +244,3 @@ The champion test for the procurement head, three questions: "Will they explain 
 - references/buying-group.md: the five seats, placement, the champion test, missing seats, the multi threading checklist, the map.
 - references/verticals.md: buyer sector notes for the nine verticals, no statistic.
 - references/voice-and-fact-check.md: the short voice check and fact check.
-- scripts/claim_ledger.py and references/claim-ledger.md: the seat map skeleton and the claim ledger on the exact delivered text (`python3`, or `python` where it is missing).

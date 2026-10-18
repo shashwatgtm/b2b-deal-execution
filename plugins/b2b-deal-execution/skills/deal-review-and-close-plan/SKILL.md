@@ -119,11 +119,11 @@ Tie breakers:
 - Output: the plan with its dates.
 - Failure mode: adding contacts or account facts the user did not give.
 
-**Step 8. Check, then the claim ledger.**
+**Step 8. Check.**
 - Input: the draft, word for word as you will send it.
-- Action: the voice check and the fact check in references/voice-and-fact-check.md (every number the user's, a script's or a cited page's; every example default labelled; hand offs named with plugin and skill; a mutual plan for the buyer built from `python3 scripts/claim_ledger.py skeleton --type mutual-plan`); then references/claim-ledger.md on the exact text you will send: run `python3 scripts/claim_ledger.py scan`, give each NEEDS SOURCE line the seller's exact words or a script line, or rewrite it as a slot, a question or a hedge, and run `check` until LEDGER PASS; then run `check --final` with the same files as your very last tool call (references/claim-ledger.md step 5).
-- Output: your whole reply is exactly the text that last call printed between its BEGIN CHECKED REPLY and END CHECKED REPLY lines: nothing before it, nothing after it, no word changed.
-- Failure mode: an unlabelled default, an invented figure, a dash, a count that does not match its list; a quote stretched to fit; a sentence reworded after the check.
+- Action: the voice check and the fact check in references/voice-and-fact-check.md (every number the user's, a script's or a cited page's; every example default labelled; hand offs named with plugin and skill;).
+- Output: the checked draft.
+- Failure mode: an unlabelled default, an invented figure, a dash, a count that does not match its list.
 
 ## 5. Output Format
 
@@ -266,7 +266,7 @@ I have not written a battle card: that is b2b-sales-enablement / competitive-int
 9. Domain rule: every date in a plan comes from scripts/close_plan.py or from the user; a past or impossible close date is refused, never rolled over.
 10. Domain rule: a missing number is never read as 0 and a negative number is never read as positive; the scripts refuse them with a message, which is passed on as written.
 11. Never give a reason, motive or gender the user did not give: write the role or "they".
-12. Restate every user fact with its exact meaning: a reply deadline is not a signing date, an ask is not an agreement, "IT wants a check" is not "IT has approved". Every buyer side line passes the claim ledger (Step 8).
+12. Restate every user fact with its exact meaning: a reply deadline is not a signing date, an ask is not an agreement, "IT wants a check" is not "IT has approved".
 13. Never state how the seller's product handles, stores or hosts data, or what it is certified for, unless the seller said it or a cited page shows it: write "[User to add: ...]".
 
 ## 8. Trigger Phrases
@@ -289,5 +289,4 @@ Every command below is written with `python3`; on Windows, or wherever `python3`
 - references/stage-playbooks.md: objective, exit evidence, questions and risk per stage; the stuck deal; the champion test; the economic buyer; five coaching questions.
 - references/close-plan-method.md: the mutual close plan and the account plan method.
 - references/verticals.md: buyer sector notes for the nine verticals, no statistic.
-- scripts/claim_ledger.py and references/claim-ledger.md: the asset skeletons and the claim ledger on the exact delivered text.
 - references/voice-and-fact-check.md: the short voice check and fact check.
