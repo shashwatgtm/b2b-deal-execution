@@ -1,0 +1,57 @@
+{
+  "skills": [
+    {
+      "repo": "b2b-deal-execution",
+      "path": "plugins/b2b-deal-execution/skills/discovery-and-buying-group/SKILL.md",
+      "before_sha256": "351213f734291231e138bbbb186994e73231d48de519b3af30680b1bdca23e66",
+      "after_sha256": "4b7f5635debb1c706a6d00ad5d8226b5b9287297ea74891a57ce1f664323aab4",
+      "frontmatter_sha256": "0c95f8ebf2e7e793cae8a12abb3f265ff8c51b65f7b012663a1811cd6276f5c2",
+      "reference_sha256": "48e5917aecb374a4dfd467a5a74a066c1061c275d6110cc51b36a4860fe0bd8e"
+    },
+    {
+      "repo": "b2b-deal-execution",
+      "path": "plugins/b2b-deal-execution/skills/sales-sequences/SKILL.md",
+      "before_sha256": "7d5a89dac80c1cd8c3b7bcaa093d9edc3d77df0410d18cece9a3a667205aa140",
+      "after_sha256": "e3e043785d190b743f8b57237b28a3a59adf8f1d9f86d4df34c6af4a0fe7c280",
+      "frontmatter_sha256": "4df8364a4829e8269d45b9edd4b3f378d87c679f9ed1a22031d9c6b712598f87",
+      "reference_sha256": "48e5917aecb374a4dfd467a5a74a066c1061c275d6110cc51b36a4860fe0bd8e"
+    },
+    {
+      "repo": "b2b-deal-execution",
+      "path": "plugins/b2b-deal-execution/skills/deal-review-and-close-plan/SKILL.md",
+      "before_sha256": "0016653002c43ffc71ee0af1ebcc26c4cc4247f3f6905f38a239a117d1cb98a5",
+      "after_sha256": "24b9219e7876119dd675a696ea761d3c1fed40e64b95aa7d6777ea102c2b3bb5",
+      "frontmatter_sha256": "6ce70125e4370326988a25ce9d6ea1564ee6fc5b151ffac07fe6a071fafeeec1",
+      "reference_sha256": "48e5917aecb374a4dfd467a5a74a066c1061c275d6110cc51b36a4860fe0bd8e"
+    },
+    {
+      "repo": "b2b-deal-execution",
+      "path": "plugins/b2b-deal-execution/skills/negotiation-and-champion/SKILL.md",
+      "before_sha256": "50ba2cc9a69116df51bf5ee967609ae045a80b80d2a5ecde093a6ae3b9c9d6d9",
+      "after_sha256": "dbf1c01cee2059f851a225682a8ce03f444335fe140cbe005879a19ea22e5509",
+      "frontmatter_sha256": "77ef5ff105799f875c264433f14b3cd48b5fb64ee3c5d8d0c0c889a42207e5e7",
+      "reference_sha256": "48e5917aecb374a4dfd467a5a74a066c1061c275d6110cc51b36a4860fe0bd8e"
+    }
+  ],
+  "tools": {
+    "alpha": [
+      "gtm_consultation",
+      "epic_audit",
+      "generate_roadmap"
+    ],
+    "revenue": [
+      "account_plan_builder",
+      "deal_strategy_coach",
+      "discovery_question_bank",
+      "roi_business_case_builder",
+      "mutual_action_plan_generator",
+      "win_loss_analyzer",
+      "proposal_section_writer",
+      "email_sequence_generator",
+      "demo_script_builder",
+      "pricing_negotiation_guide",
+      "champion_enablement_kit",
+      "competitive_trap_setter"
+    ]
+  }
+}
