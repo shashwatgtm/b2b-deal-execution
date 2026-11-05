@@ -4,12 +4,12 @@
     "name": "Shashwat Ghosh",
     "url": "https://github.com/shashwatgtm"
   },
-  "description": "Deal execution skills for B2B sellers by Shashwat Ghosh, Helix GTM Consulting: deal reviews and close plans, discovery and buying groups, negotiation and champion assets, and sales email sequences.",
+  "description": "Deal execution skills for B2B sellers by Shashwat Ghosh, Helix GTM Consulting: decide whether a live deal is on track, what to ask next, what to concede and what to send, with deal reviews and close plans, discovery and buying groups, negotiation and champion assets, and sales email sequences.",
   "plugins": [
     {
       "name": "b2b-deal-execution",
       "source": "./plugins/b2b-deal-execution",
-      "description": "Win the B2B deal in front of you: score deal health from your own facts, plan the close with the buyer on a working day calendar, ask the right discovery questions, map the buying group, hold the price and arm your champion, and write deal stage email sequences.",
+      "description": "For B2B sellers: decide whether a live deal is on track and what to do next. Give it your own deal facts; get a deal health score, a close plan with the buyer on a working day calendar, discovery questions, a buying group map, the cost of each price concession, an asset your champion can forward, and deal stage email sequences.",
       "version": "1.0.5"
     }
   ]
