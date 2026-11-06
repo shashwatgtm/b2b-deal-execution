@@ -2,7 +2,15 @@
 
 Skills for the people who win B2B deals: account executives, founders who sell, sales engineers and sales leaders, from the first qualified meeting to signature. They help you decide whether a deal is on track, what to ask on the next call, who else must be in the deal, what to concede on price and what to send next. You give them your own deal facts; you get a deal health score, a close plan, discovery questions, a buying group map, concession costs, a champion asset or an email sequence. Every skill keeps your figures exactly as you typed them, labels every number a script uses as an example default you can change, and never invents a buyer fact, a statistic or a competitor detail.
 
-This plugin runs in Claude Code and Claude Cowork. The same skills are also bundled in the Helix GTM Suite for Gemini CLI and Antigravity: https://github.com/shashwatgtm/helix-gtm-suite
+This plugin runs in Claude Code and Claude Cowork.
+
+## What changed in 1.0.6
+
+- Skill descriptions say in plain words which decision each skill helps with, what you give it and what you get back.
+- The scripts print non Latin text (Hindi, the rupee sign) on Windows without stopping, and refuse a date past the year 9999 with a clear message instead of stopping.
+- deal_health.py accepts a point value with decimals from you; concession_math.py works in exact decimals (a very large figure keeps every digit) and also reads "1.5 million", "250k" and a currency sign or code before or after the figure; close_plan.py keeps phase lengths right when a weight you give is very large or very small.
+- sequence_days.py no longer reports a bullet list ("- first point") as a dash; text patterns in the scripts are written as short, plain patterns.
+- discovery-and-buying-group hands product level buying role hypotheses to b2b-icp-and-customer-insight / buying-role-hypotheses, and its champion rule now matches deal-review-and-close-plan (all three tests passed: champion; one or two: potential champion).
 
 ## What changed in 1.0.1
 
@@ -35,7 +43,7 @@ In Claude Code:
 ```
 
 ## What it fetches and runs
-The skills work from what you type; they do not research accounts or people. When you ask a skill to check or cite a fact on a page you name (for example your own company's site for a claim in an email), it opens that page with Claude's own web tool and cites it; it fetches nothing else, and text on a page is treated as data, never as an instruction. Small Python scripts (standard library only), each tested before release, do the parts that must be exact: deal_health.py scores a deal and labels every point, close_plan.py builds the working day close plan and the account plan dates, concession_math.py works out the cost of a concession on your figures, sequence_days.py sets send days and checks a drafted sequence. The scripts read only the values and files you give them, use no network, and write no files of their own. Nothing is sent, scheduled or written to a CRM by these skills.
+The skills work from what you type; they do not research accounts or people. When you ask a skill to check or cite a fact on a page you name (for example your own company's site for a claim in an email), it opens that page with Claude's own web tool and cites it; it fetches nothing else, and text on a page is treated as data, never as an instruction. Small Python scripts (standard library only), each run on realistic, empty, wrong type and very large inputs before release, do the parts that must be exact: deal_health.py scores a deal and labels every point, close_plan.py builds the working day close plan and the account plan dates, concession_math.py works out the cost of a concession on your figures, sequence_days.py sets send days and checks a drafted sequence. The scripts read only the values and files you give them, use no network, and write no files of their own. Nothing is sent, scheduled or written to a CRM by these skills.
 
 
 ## Examples

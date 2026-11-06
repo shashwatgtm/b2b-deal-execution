@@ -2,16 +2,16 @@
 name: deal-review-and-close-plan
 description: >
   Helps a B2B seller decide whether one live deal is on track and what to do next to reach
-  signature. For account executives, founders who sell, sales engineers and sales leaders. You give
-  it your own deal facts or a CRM paste. You get a deal health score with every point shown as an
-  example default you can change, the risks ranked, dated next actions, a mutual close plan with the
-  buyer on a working day calendar, and a 30, 60 and 90 day account plan. Use when someone says
-  "review my deal", "deal review", "deal health", "is this deal at risk", "deal is stuck", "pressure
-  test this deal", "is this commit", "what should I do next on this deal", "mutual action plan",
-  "MAP", "mutual close plan", "close plan", "plan to signature", "account plan", "30 60 90 day
-  account plan" or pastes deal facts from a CRM. Not for battle cards, proposals, meeting briefs,
-  account research, renewals, onboarding plans, event or deal demos, discovery questions, discounts
-  or email sequences.
+  signature. For account executives, founders who sell, sales engineers and sales leaders. The
+  seller gives their own deal facts or a CRM paste; the skill returns a deal health score with every
+  point shown as an example default the seller can change, the risks ranked, dated next actions, a
+  mutual close plan with the buyer on a working day calendar, and a 30, 60 and 90 day account plan.
+  Use when someone says "review my deal", "deal review", "deal health", "is this deal at risk",
+  "deal is stuck", "pressure test this deal", "is this commit", "what should I do next on this
+  deal", "mutual action plan", "MAP", "mutual close plan", "close plan", "plan to signature",
+  "account plan", "30 60 90 day account plan" or pastes deal facts from a CRM. Not for battle cards,
+  proposals, meeting briefs, account research, renewals, onboarding plans, event or deal demos,
+  discovery questions, discounts or email sequences.
 ---
 
 # Deal Review and Close Plan
@@ -118,7 +118,7 @@ Tie breakers:
 
 **Step 8. Check.**
 - Input: the draft, word for word as you will send it.
-- Action: the voice check and the fact check in references/voice-and-fact-check.md (every number the user's, a script's or a cited page's; every example default labelled; hand offs named with plugin and skill;).
+- Action: the voice check and the fact check in references/voice-and-fact-check.md (every number the user's, a script's or a cited page's; every example default labelled; hand offs named with plugin and skill).
 - Output: the checked draft.
 - Failure mode: an unlabelled default, an invented figure, a dash, a count that does not match its list.
 
