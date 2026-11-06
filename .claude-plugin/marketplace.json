@@ -10,7 +10,7 @@
       "name": "b2b-deal-execution",
       "source": "./plugins/b2b-deal-execution",
       "description": "For B2B sellers: decide whether a live deal is on track and what to do next. Give it your own deal facts; get a deal health score, a close plan with the buyer on a working day calendar, discovery questions, a buying group map, the cost of each price concession, an asset your champion can forward, and deal stage email sequences.",
-      "version": "1.0.7"
+      "version": "1.0.8"
     }
   ]
 }
