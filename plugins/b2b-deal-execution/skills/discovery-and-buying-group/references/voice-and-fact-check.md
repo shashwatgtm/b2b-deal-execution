@@ -17,6 +17,8 @@ Never write:
 - Staccato fragments ("No risk. No delay.") and "It is not X. It is Y." lines.
 - Coined labels the reader would not use.
 - A gender for a person known only by a role or placeholder: write the role or "they".
+- A claim about what usually happens in deals ("a common reason a signature date slips") or how buyers in a sector, a region or a role behave ("banks often cannot give references", "the measures logistics buyers usually watch"): turn it into a question for the buyer or the seller, or name the sector notes as a prompt to confirm.
+- Arithmetic with symbols that read as dashes (a minus sign, a dash between figures): write it in words ("value minus the amount at risk", "10 to 15").
 
 ## Fact check (run on every fact and figure before the answer goes out)
 1. List every fact and figure in the draft.

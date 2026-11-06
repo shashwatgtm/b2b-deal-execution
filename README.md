@@ -4,6 +4,12 @@ Skills for the people who win B2B deals: account executives, founders who sell, 
 
 This plugin runs in Claude Code and Claude Cowork.
 
+## What changed in 1.0.7
+
+- Tested by behaviour: an eval suite in evals/ runs real prompts with and without the plugin (see "How this plugin is tested").
+- Fixes from that testing: sector notes are used as prompts to confirm with the buyer, never as claims about how buyers in a sector behave; with no code execution, deal-review-and-close-plan gives timing in words or your own dates, never a worked out calendar date or weekday; negotiation-and-champion writes any arithmetic in words, works out only the figures the decision needs, and never assumes a buyer cannot give a trade.
+- The explicit "icon" field is removed from plugin.json; the icon in .claude-plugin/ is still picked up by default.
+
 ## What changed in 1.0.6
 
 - Skill descriptions say in plain words which decision each skill helps with, what you give it and what you get back.
@@ -48,6 +54,9 @@ The skills work from what you type; they do not research accounts or people. Whe
 
 ## Examples
 The worked examples use a real company (Klenty) only as an example of the seller's own company, with every fact about it quoted from its own page fetched on 14 October 2026. The buyers, the people, the deals and every figure in the examples are hypothetical; no real employee or customer is described.
+
+## How this plugin is tested
+evals/ holds 8 cases in the `claude plugin eval` layout: for each of the 4 skills, one realistic B2B request that should use the skill and one near miss that should not. Every case has a judged rubric (what the skill promises, plus no invented facts or figures, no software recommendations, no client names, plain English and no dashes used as punctuation), a regex check for dashes, and a check that the skill did or did not run. In the final run (6 November 2026, 2 runs per case with and without the plugin, Sonnet as agent and judge, no shell tools), the mean case score was 0.68 with the plugin and 0.43 without it; on the 4 cases the skills are built for it was 0.81 with and 0.31 without. Each skill ran on all 8 of its trigger runs and on none of the 16 near miss runs. Runs where every graded check passed: 6 of 16 with the plugin, 1 of 16 without. The cases were run by a headless runner that applies the same scoring to these files, because `claude plugin eval` could not sign in its child runs on the test machine.
 
 ## Privacy
 This plugin sends no data to Helix GTM Consulting and runs no server. It stores nothing: no account, no log and no copy of your work; any file Claude writes for you (such as a draft for the check script) stays on your own machine. People in a deal are handled as roles; no personality profiles. What you type into Claude is handled under your own Claude account terms.
