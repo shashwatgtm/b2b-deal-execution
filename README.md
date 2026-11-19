@@ -1,5 +1,7 @@
 # B2B Deal Execution
 
+By Helix GTM Consulting (https://gtmhelix.com), built by Shashwat Ghosh, Co-Founder and Fractional CMO.
+
 Skills for the people who win B2B deals: account executives, founders who sell, sales engineers and sales leaders, from the first qualified meeting to signature. They help you decide whether a deal is on track, what to ask on the next call, who else must be in the deal, what to concede on price and what to send next. You give them your own deal facts; you get a deal health score, a close plan, discovery questions, a buying group map, concession costs, a champion asset or an email sequence. Every skill keeps your figures exactly as you typed them, labels every number a script uses as an example default you can change, and never invents a buyer fact, a statistic or a competitor detail.
 
 This plugin runs in Claude Code and Claude Cowork.
