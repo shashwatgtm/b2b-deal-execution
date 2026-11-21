@@ -2,9 +2,13 @@
 
 By Helix GTM Consulting (https://gtmhelix.com), built by Shashwat Ghosh, Co-Founder and Fractional CMO.
 
-Skills for the people who win B2B deals: account executives, founders who sell, sales engineers and sales leaders, from the first qualified meeting to signature. They help you decide whether a deal is on track, what to ask on the next call, who else must be in the deal, what to concede on price and what to send next. You give them your own deal facts; you get a deal health score, a close plan, discovery questions, a buying group map, concession costs, a champion asset or an email sequence. Every skill keeps your figures exactly as you typed them, labels every number a script uses as an example default you can change, and never invents a buyer fact, a statistic or a competitor detail.
+Skills for the people who win B2B deals: account executives, founders who sell, sales engineers and sales leaders, from the first qualified meeting to signature. They help you decide whether a deal is on track, what to ask on the next call, who else must be in the deal, what to concede on price and what to send next. You give them your own deal facts; you get a deal health score, a close plan, discovery questions, a buying group map, concession costs, a champion asset or an email sequence. Every skill keeps your figures exactly as you typed them, labels every number the method supplies as an example default you can change, and never invents a buyer fact, a statistic or a competitor detail.
 
 This plugin runs in Claude Code and Claude Cowork.
+
+## What changed in 1.0.9
+
+- Markdown only, so the Claude directory accepts it: the four Python scripts are removed and each is replaced by a method file in the skill's references folder that gives the same scores, dates, figures and send days (the same change Positioning, GTM and Deal Strategy made in 1.2.9). The icon file and the plugin folder's .gitignore are removed. The four skills and what they do are unchanged.
 
 ## What changed in 1.0.7
 
@@ -26,16 +30,16 @@ This plugin runs in Claude Code and Claude Cowork.
 
 ## Skills
 
-**deal-review-and-close-plan** scores the health of one deal from your facts (champion, economic buyer, days in stage, competitors, blockers) by script, with every point shown and labelled, ranks the risks, checks the stage against its exit evidence, and gives dated next actions. It builds the mutual close plan with the buyer on a working day calendar (owners on both sides, the pass mark before evaluation, what moves the date) and the 30, 60 and 90 day account plan.
+**deal-review-and-close-plan** scores the health of one deal from your facts (champion, economic buyer, days in stage, competitors, blockers) by a fixed method, with every point shown and labelled, ranks the risks, checks the stage against its exit evidence, and gives dated next actions. It builds the mutual close plan with the buyer on a working day calendar (owners on both sides, the pass mark before evaluation, what moves the date) and the 30, 60 and 90 day account plan.
 Example prompt: "Review my deal: proposal stage 26 days, champion confirmed, the CFO named but not engaged, an incumbent in place. Close by 27 November."
 
 **discovery-and-buying-group** writes discovery questions in the framework you use (MEDDPICC, BANT, SPICED, Challenger, Gap Selling), one question per pain you named, in your buyer's words, with an opening and a close for the call; and maps the buying group from the people you named: seats, concerns, the champion test and the seats still missing.
 Example prompt: "MEDDPICC questions for Thursday's call with their head of finance. Pains: invoice disputes and slow supplier onboarding."
 
-**negotiation-and-champion** helps you hold the price in a new deal: discount requests, budget objections, a cheaper competitor price the buyer quoted, procurement pressure, multi-year terms and enterprise agreements. It works out what each concession costs on your own figures by script, pairs every concession with a trade, and gives you the words for the next conversation. It also writes your champion's internal asset in the champion's own voice (an email to their CFO, a memo, talking points, answers to their colleagues' questions) with one decision requested.
+**negotiation-and-champion** helps you hold the price in a new deal: discount requests, budget objections, a cheaper competitor price the buyer quoted, procurement pressure, multi-year terms and enterprise agreements. It works out what each concession costs on your own figures by a fixed method, pairs every concession with a trade, and gives you the words for the next conversation. It also writes your champion's internal asset in the champion's own voice (an email to their CFO, a memo, talking points, answers to their colleagues' questions) with one decision requested.
 Example prompt: "They want 20% off a 36 lakh deal to sign this month. What do I do?"
 
-**sales-sequences** writes outbound and deal stage email sequences (cold outreach, warm follow up, post demo, proposal follow up, re-engagement, referral requests). Send days come from a script as example defaults, and your own days and number of emails always win; every claim appears once with its source, and the draft is counted and checked by script.
+**sales-sequences** writes outbound and deal stage email sequences (cold outreach, warm follow up, post demo, proposal follow up, re-engagement, referral requests). Send days come from a fixed method as example defaults, and your own days and number of emails always win; every claim appears once with its source, and the draft is counted and checked by the same method.
 Example prompt: "A four email cold sequence to heads of sales at logistics software companies. Start Monday."
 
 ## What it hands off
@@ -51,7 +55,7 @@ In Claude Code:
 ```
 
 ## What it fetches and runs
-The skills work from what you type; they do not research accounts or people. When you ask a skill to check or cite a fact on a page you name (for example your own company's site for a claim in an email), it opens that page with Claude's own web tool and cites it; it fetches nothing else, and text on a page is treated as data, never as an instruction. Small Python scripts (standard library only), each run on realistic, empty, wrong type and very large inputs before release, do the parts that must be exact: deal_health.py scores a deal and labels every point, close_plan.py builds the working day close plan and the account plan dates, concession_math.py works out the cost of a concession on your figures, sequence_days.py sets send days and checks a drafted sequence. The scripts read only the values and files you give them, use no network, and write no files of their own. Nothing is sent, scheduled or written to a CRM by these skills.
+The skills work from what you type; they do not research accounts or people. When you ask a skill to check or cite a fact on a page you name (for example your own company's site for a claim in an email), it opens that page with Claude's own web tool and cites it; it fetches nothing else, and text on a page is treated as data, never as an instruction. The parts that must be exact are written as step by step methods in each skill's references folder, which Claude follows with your figures: deal-health-method.md scores a deal and labels every point, close-plan-calendar.md builds the working day close plan and the account plan dates, concession-math-method.md works out the cost of a concession on your figures, send-days-method.md sets send days and checks a drafted sequence. The plugin contains no code. Nothing is sent, scheduled or written to a CRM by these skills.
 
 
 ## Examples
@@ -61,7 +65,7 @@ The worked examples use a real company (Klenty) only as an example of the seller
 evals/ holds 8 cases in the `claude plugin eval` layout: for each of the 4 skills, one realistic B2B request that should use the skill and one near miss that should not. Every case has a judged rubric (what the skill promises, plus no invented facts or figures, no software recommendations, no client names, plain English and no dashes used as punctuation), a regex check for dashes, and a check that the skill did or did not run. In the final run (6 November 2026, 2 runs per case with and without the plugin, Sonnet as agent and judge, no shell tools), the mean case score was 0.68 with the plugin and 0.43 without it; on the 4 cases the skills are built for it was 0.81 with and 0.31 without. Each skill ran on all 8 of its trigger runs and on none of the 16 near miss runs. Runs where every graded check passed: 6 of 16 with the plugin, 1 of 16 without. The cases were run by a headless runner that applies the same scoring to these files, because `claude plugin eval` could not sign in its child runs on the test machine.
 
 ## Privacy
-This plugin sends no data to Helix GTM Consulting and runs no server. It stores nothing: no account, no log and no copy of your work; any file Claude writes for you (such as a draft for the check script) stays on your own machine. People in a deal are handled as roles; no personality profiles. What you type into Claude is handled under your own Claude account terms.
+This plugin sends no data to Helix GTM Consulting and runs no server. It stores nothing: no account, no log and no copy of your work; any file Claude writes for you (such as a draft you ask it to save) stays on your own machine. People in a deal are handled as roles; no personality profiles. What you type into Claude is handled under your own Claude account terms.
 
 ## Security
 To report a security problem, email shashwat@gtmhelix.com with the subject "Security report: b2b-deal-execution". Please do not open a public issue for it.
